@@ -12,8 +12,6 @@ class Home extends CI_Controller {
         
         $this->load->helper('url');
         
-        
-
         $this->load->view('inc/header_view');
         $this->load->view('home/home_view');
         $this->load->view('inc/navbar_view');
@@ -23,6 +21,13 @@ class Home extends CI_Controller {
     
     public function test(){
         
+    }
+
+    public function aFunc(){
+
+        $this->load->view('user_dash/dash_view');
+        $this->load->view('inc/footer_view');
+
     }
 
 }
